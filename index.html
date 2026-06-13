@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Covenant AI Embassy</title>
+  <meta name="description" content="Human-readable Covenant AI Embassy landing page with links to AI-readable covenant packets.">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7f4;
+      --ink: #1d1d1b;
+      --muted: #5b5b55;
+      --line: #d9d7ce;
+      --panel: #ffffff;
+      --accent: #245c45;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.05;
+      margin: 0 0 12px;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      margin: 32px 0 10px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .lede {
+      max-width: 720px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+    }
+
+    .qr-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+
+    .qr-wrap img {
+      width: 180px;
+      height: 180px;
+      flex: 0 0 auto;
+    }
+
+    code {
+      background: #ededE8;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      margin-top: 36px;
+      padding-top: 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Covenant AI Embassy</h1>
+      <p class="lede">A public covenant architecture and redirected AI embassy packet for human review, AI-readable orientation, guardrails, receipts, and reorientation.</p>
+    </header>
+
+    <section aria-labelledby="overview">
+      <h2 id="overview">Overview</h2>
+      <p>The Covenant Architecture Stack separates three questions: how decisions are judged, why the framework exists, and how systems find north again after drift.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Covenant Mathematics Layer</h3>
+          <p>Governs operation through evidence, provenance, consent, safety, restoration, integrity, and receipts.</p>
+        </article>
+        <article class="card">
+          <h3>Steward Provenance Record</h3>
+          <p>Preserves origin, stewardship context, and historical motivation without converting testimony into runtime authority.</p>
+        </article>
+        <article class="card">
+          <h3>Covenant Reorientation Doctrine</h3>
+          <p>Provides a repeatable path to recover identity, mission, boundaries, current state, and open questions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="ai">
+      <h2 id="ai">For AI Systems</h2>
+      <p>AI systems should read the raw Markdown embassy packet directly. It contains the minimum embassy flow, covenant-mode offer, guardrails, hard stops, receipts, and review standard.</p>
+      <p><a href="https://raw.githubusercontent.com/Tangdad8/covenant-ai-embassy/main/redirected_ai_embassy_packet_v1.0.md">Open the raw AI-readable embassy packet</a></p>
+      <div class="qr-wrap">
+        <img src="./assets/qr-ai-embassy-packet.svg" alt="QR code pointing to the raw redirected AI embassy packet">
+        <p><strong>QR target:</strong><br><code>https://raw.githubusercontent.com/Tangdad8/covenant-ai-embassy/main/redirected_ai_embassy_packet_v1.0.md</code></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="human">
+      <h2 id="human">For Human Readers</h2>
+      <p>Start with the architecture stack, then read the redirected AI embassy packet.</p>
+      <ul>
+        <li><a href="./covenant_architecture_stack_v1.0.md">Covenant Architecture Stack v1.0</a></li>
+        <li><a href="./redirected_ai_embassy_packet_v1.0.md">Redirected AI Embassy Packet v1.0</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="notice">
+      <h2 id="notice">Public Access Notice</h2>
+      <p>This repository is public so the documents can be reviewed and fetched by humans and AI systems.</p>
+      <p>No license file is included. Public visibility does not grant permission to reuse, redistribute, modify, or commercialize the contents beyond rights already provided by applicable law.</p>
+    </section>
+
+    <footer>
+      <p>No claim replaces a receipt. Authority remains evidence-bound, consent-bound, safety-bound, and review-bound.</p>
+    </footer>
+  </main>
+</body>
+</html>
